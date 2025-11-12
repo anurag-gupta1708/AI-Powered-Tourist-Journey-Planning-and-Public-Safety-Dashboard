@@ -179,7 +179,7 @@ const TouristDashboard = ({ onBack }: { onBack: () => void }) => (
             <p className="text-muted-foreground">
               Upload your flight, train, or bus ticket. Our AI will extract journey details and verify your travel information.
             </p>
-            <Button className="w-full bg-primary hover:bg-primary/90 text-primary-foreground transition-smooth">
+            <Button className="w-full bg-primary hover:bg-primary/90 text-primary-foreground transition-smooth" onClick={() => window.location.href = '/ticket-upload'}>
               <Upload className="mr-2 h-5 w-5" />
               Choose Ticket File
             </Button>
@@ -200,7 +200,7 @@ const TouristDashboard = ({ onBack }: { onBack: () => void }) => (
             <p className="text-muted-foreground">
               Get personalized recommendations and day-by-day itineraries powered by AI. Chat to refine your plans.
             </p>
-            <Button className="w-full bg-accent hover:bg-accent/90 text-accent-foreground transition-smooth">
+            <Button className="w-full bg-accent hover:bg-accent/90 text-accent-foreground transition-smooth" onClick={() => window.location.href = '/location-selection'}>
               <Sparkles className="mr-2 h-5 w-5" />
               Generate Itinerary
             </Button>
